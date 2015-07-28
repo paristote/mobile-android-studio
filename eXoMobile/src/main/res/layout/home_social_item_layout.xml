@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_social_wrap_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/home_activity_ticker_streachable"
+    android:gravity="center_vertical"
+    android:padding="2dp" >
+
+    <ImageView
+        android:id="@+id/home_activity_avatar"
+        android:layout_width="@dimen/home_profile_avatar_size"
+        android:layout_height="@dimen/home_profile_avatar_size"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="7dp"
+        android:contentDescription="@string/About"
+        android:src="@drawable/default_avatar"
+        android:scaleType="fitXY" />
+
+
+    <TextView
+        android:id="@+id/home_activity_name_txt"
+        style="@style/textview_activity_name_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/home_activity_avatar"
+        android:layout_marginLeft="10dip"
+        android:maxLines="2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/home_activity_message_txt"
+        style="@style/textview_activity_title_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_activity_name_txt"
+        android:layout_toRightOf="@id/home_activity_avatar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:singleLine="true" />
+
+</RelativeLayout>

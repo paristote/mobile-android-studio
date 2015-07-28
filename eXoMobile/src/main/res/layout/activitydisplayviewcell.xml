@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Header section of Activity details -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp" >
+
+    <!-- Avatar -->
+    <org.exoplatform.widget.ShaderImageView
+        android:id="@+id/imageView_Avatar"
+        android:layout_width="@dimen/social_avatar_size"
+        android:layout_height="@dimen/social_avatar_size"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_Content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView_Avatar"
+        android:background="@drawable/news_browser_background_shape"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/textView_Name"
+            style="@style/textview_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_Message"
+            style="@style/textview_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_Name"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="1dip"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/textView_Time"
+            style="@style/textview_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_Message"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:padding="3dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
